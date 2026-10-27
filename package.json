@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-connecticut",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Connecticut Open Data — US government open data (data.ct.gov) via the Socrata SoQL API: state agencies, public health, education & transportation. Keyless.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-510fc58e4bdf51e3bfb434743f780a1307d8e2a6ab83d47d3c0689b80d463aa2",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "sourceHash": "v1-e435af3e4fdeda54aec6d46a06d0f551b77058c8505868e3278c4281087cbd8c",
+    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
   }
 }
