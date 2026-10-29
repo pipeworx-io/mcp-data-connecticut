@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-connecticut",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Connecticut Open Data — US government open data (data.ct.gov) via the Socrata SoQL API: state agencies, public health, education & transportation. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-connecticut": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-connecticut"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-connecticut.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-connecticut",
   "pipeworx": {
-    "sourceHash": "v1-e435af3e4fdeda54aec6d46a06d0f551b77058c8505868e3278c4281087cbd8c",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "data-connecticut",
+    "gatewaySlug": "data-connecticut",
+    "sourceHash": "v1-b16c20058ecdf99598874d7e2e28e98e3b460c72d2d64981653bc792b035a092",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
